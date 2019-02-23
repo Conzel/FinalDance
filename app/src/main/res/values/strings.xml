@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name" translatable="false">FinalDance</string>
+    <string name="connection_failure">\"Connection failed :(\"</string>
+</resources>
