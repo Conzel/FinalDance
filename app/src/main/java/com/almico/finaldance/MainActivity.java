@@ -37,10 +37,8 @@ public class MainActivity extends AppCompatActivity {
                     public void onConnected(SpotifyAppRemote spotifyAppRemote) {
                         mSpotifyAppRemote = spotifyAppRemote;
                         Log.d("MainActivity", "Connected! Yay!");
-
-                        // Now you can start interacting with App Remote
                         // TODO: Change to connected
-                        notConnected();
+                        connected();
                     }
 
                     @Override
@@ -60,7 +58,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void connected() {
-
+        Intent intent = new Intent(this, SongSelection.class);
+        startActivity(intent);
     }
 
     @Override

@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name" translatable="false">FinalDance</string>
     <string name="connection_failure">\"Connection failed :(\"</string>
+    <string name="start">Start!</string>
+    <string name="spotify_list">"Link zu Spotify-Playlist: "</string>
+    <string name="time_per_song">Zeit pro Lied:</string>
+    <string name="time_choose">Zeit auswählen:</string>
 </resources>
