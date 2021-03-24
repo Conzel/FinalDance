@@ -7,13 +7,15 @@
     tools:context=".FirstFragment">
 
     <Button
-        android:id="@+id/button_first"
+        android:id="@+id/start_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="81dp"
         android:text="@string/next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/stop_button"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
@@ -52,7 +54,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="3"
+        android:hint="@string/time_fade"
         android:importantForAutofill="no"
         android:inputType="number"
         android:text="@string/time_fade"
@@ -67,7 +69,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:text="@string/hello_first_fragment"
-        app:layout_constraintBottom_toTopOf="@+id/button_first"
+        app:layout_constraintBottom_toTopOf="@+id/start_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/time_fade" />
@@ -102,5 +104,16 @@
         app:layout_constraintEnd_toStartOf="@+id/time_fade"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/time_stop" />
+
+    <Button
+        android:id="@+id/stop_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stop_button_label"
+        app:layout_constraintBottom_toBottomOf="@+id/start_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/start_button"
+        app:layout_constraintTop_toTopOf="@+id/start_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

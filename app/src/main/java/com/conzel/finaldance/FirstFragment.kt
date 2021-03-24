@@ -4,7 +4,6 @@ import android.media.AudioManager
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -150,21 +149,29 @@ class FirstFragment : Fragment() {
             }
         }
 
-        view.findViewById<Button>(R.id.button_first).setOnClickListener {
-            load_settings()
-            stop_callbacks()
-            if (previousAudio == -1) {
-                saveCurrentAudio()
-            } else {
-                restoreAudio()
-            }
-            playbackTask.run()
+        view.findViewById<Button>(R.id.start_button).setOnClickListener {
+            start_playback()
+        }
+
+        view.findViewById<Button>(R.id.stop_button).setOnClickListener {
+            stop_playback()
         }
     }
 
-    override fun onStop() {
-        super.onStop()
+    fun start_playback() {
+        load_settings()
         stop_callbacks()
+        if (previousAudio == -1) {
+            saveCurrentAudio()
+        } else {
+            restoreAudio()
+        }
+        playbackTask.run()
+    }
+
+    fun stop_playback() {
+        stop_callbacks()
+        pause()
         restoreAudio()
     }
 }

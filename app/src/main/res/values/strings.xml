@@ -2,17 +2,19 @@
     <string name="app_name">FinalDance</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First thingie</string>
-    <string name="second_fragment_label">Second Thingie</string>
+    <string name="first_fragment_label">Main Screen</string>
+    <string name="second_fragment_label">Second Screen</string>
     <string name="next">Start</string>
     <string name="previous">Previous</string>
 
-    <string name="hello_first_fragment">Hello firstie.</string>
+    <string name="hello_first_fragment">Your song will be displayed here.</string>
     <string name="hello_second_fragment">Hello secondie.</string>
-    <string name="time_play">90</string>
+    <string name="time_play">100</string>
     <string name="time_pause">30</string>
     <string name="time_fade">3</string>
     <string name="time_playing_label">Time Play</string>
     <string name="time_pausing_label">Time Pause</string>
     <string name="time_fade_label">Time Fade</string>
+    <string name="stop_button_label">Stop</string>
+    <string name="time_fade_hint">3</string>
 </resources>

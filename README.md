@@ -8,4 +8,4 @@ and upload app to your device. On the phone, the Spotify App must be open and ru
 
 The app has three fields, Time Play, Time Pause, Time Fade. A song is played for Time Play time, then faded out over Time Fade and then paused for Time Pause, until the next song starts playing in the play list. Start then starts the current song from the beginning.
 
-The app must always stay open to work.
+The app will continue to control the playback until you press stop or close it. It will also control your System Audio Level to implement fadeout, so beware!
