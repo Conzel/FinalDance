@@ -15,7 +15,7 @@ import com.spotify.android.appremote.api.PlayerApi
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
-class FirstFragment : Fragment() {
+class MainFragment : Fragment() {
     var audioManager: AudioManager? = null
     var previousAudio = -1
 
