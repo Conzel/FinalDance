@@ -11,4 +11,6 @@ The app has three fields, Time Play, Time Pause, Time Fade. A song is played for
 The app will continue to control the playback until you press stop or close it. It will also control your System Audio Level to implement fadeout, so beware!
 
 Example screenshot:
-![Screenshot of app](./screenshot-app.jpg)
+
+<img src="./screenshot-app.jpg" width=499></img>
+
