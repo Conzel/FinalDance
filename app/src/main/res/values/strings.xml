@@ -1,8 +1,18 @@
 <resources>
-    <string name="app_name" translatable="false">FinalDance</string>
-    <string name="connection_failure">\"Connection failed :(\"</string>
-    <string name="start">Start!</string>
-    <string name="spotify_list">"Link zu Spotify-Playlist: "</string>
-    <string name="time_per_song">Zeit pro Lied:</string>
-    <string name="time_choose">Zeit auswählen:</string>
+    <string name="app_name">FinalDance</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First thingie</string>
+    <string name="second_fragment_label">Second Thingie</string>
+    <string name="next">Start</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello firstie.</string>
+    <string name="hello_second_fragment">Hello secondie.</string>
+    <string name="time_play">90</string>
+    <string name="time_pause">30</string>
+    <string name="time_fade">3</string>
+    <string name="time_playing_label">Time Play</string>
+    <string name="time_pausing_label">Time Pause</string>
+    <string name="time_fade_label">Time Fade</string>
 </resources>
